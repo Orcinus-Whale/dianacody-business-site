@@ -1,6 +1,7 @@
 /* ============================================================
    Orcinus AI · 站点主脚本
-   功能：导航吸顶变形 / 折叠菜单 / Hero轮播 / AOS / 客服弹层 / 回顶部 / 表单提交
+   功能：导航吸顶变形 / 折叠菜单 / Hero轮播 / AOS /
+         客服弹层 / 回顶部 / 表单提交
    ============================================================ */
 
 (function () {
@@ -13,13 +14,13 @@
   var supportBtn = document.getElementById('supportBtn');
   var supportPop = document.getElementById('supportPop');
 
-  /* ---------- 1.导航：下滑变形 ---------- */
+  /* ---------- 1. 导航：下滑变形 ---------- */
   var scrolled = false;
   function onScroll() {
     var y = window.scrollY || window.pageYOffset;
 
-    // 下滑超过60px：加深背景+文字切图标+搜索框加宽
-    scrolled = y>60;
+    // 下滑超过 60px：加深背景 + 文字切图标 + 搜索框加宽
+    scrolled = y > 60;
     navbar.classList.toggle('scrolled', scrolled);
 
     // 回顶部按钮：下滑超过 600px 才显示
@@ -28,7 +29,7 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  /* ---------- 2.折叠大菜单 ---------- */
+  /* ---------- 2. 折叠大菜单 ---------- */
   function openMenu() {
     menuOverlay.classList.add('open');
     hamburger.classList.add('active');
@@ -50,7 +51,7 @@
     a.addEventListener('click', closeMenu);
   });
 
-  /* ---------- 3.Hero轮播（Swiper） ---------- */
+  /* ---------- 3. Hero 轮播（Swiper） ---------- */
   var heroSwiper = new Swiper('.hero-swiper', {
     loop: true,
     speed: 900,
@@ -64,7 +65,7 @@
     fadeEffect: { crossFade: true }   // 屏间淡入淡出
   });
 
-  /* ---------- 4.AOS滚动渐入 ---------- */
+  /* ---------- 4. AOS 滚动渐入 ---------- */
   AOS.init({
     duration: 800,
     easing: 'ease-out-cubic',
@@ -72,7 +73,7 @@
     offset: 60
   });
 
-  /* ---------- 5.客服弹层 ---------- */
+  /* ---------- 5. 客服弹层 ---------- */
   supportBtn.addEventListener('click', function (e) {
     e.stopPropagation();
     supportPop.classList.toggle('open');
@@ -83,7 +84,7 @@
       supportPop.classList.remove('open');
     }
   });
-  // 键盘Esc关闭弹层
+  // 键盘 Esc 关闭弹层
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
       supportPop.classList.remove('open');
@@ -91,17 +92,17 @@
     }
   });
 
-  /* ---------- 6.回顶部 ---------- */
+  /* ---------- 6. 回顶部 ---------- */
   topBtn.addEventListener('click', function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
   /* ---------- 7. 表单提交（前端演示版） ----------
-     正式环境：把endpoint换成Cloudflare Worker地址，
-     例如 https://business.dianacody.workers.dev
-     并在Worker里做CORS + D1存储 + Turnstile校验。
+     正式环境：把 endpoint 换成你的 Cloudflare Worker 地址，
+     例如 https://business.你的子域.workers.dev
+     并在 Worker 里做 CORS + D1 存储 + Turnstile 校验。
   ------------------------------------------------------- */
-  var ENDPOINT = ''; // 填入Worker URL后启用
+  var ENDPOINT = ''; // 填入 Worker URL 后启用
 
   function handleForm(form) {
     form.addEventListener('submit', function (e) {

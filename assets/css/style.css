@@ -59,7 +59,9 @@ img { max-width: 100%; display: block; }
   font-size: 16px;
 }
 
-/** ================= 顶部导航 ================= */
+/* ============================================================
+   顶部导航
+   ============================================================ */
 .navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -167,7 +169,7 @@ img { max-width: 100%; display: block; }
 .search-btn:hover { background: rgba(77,159,255,.28); }
 .search-btn svg { width: 18px; height: 18px; }
 
-/* 右：Tag菜单 */
+/* 右：Tag 菜单 */
 .nav-right {
   display: flex;
   align-items: center;
@@ -194,7 +196,9 @@ img { max-width: 100%; display: block; }
 .navbar.scrolled .nav-text { display: none; }
 .navbar.scrolled .nav-icon { display: flex; }
 
-/** ================= 折叠大菜单 ================= */
+/* ============================================================
+   折叠大菜单
+   ============================================================ */
 .menu-overlay {
   position: fixed;
   inset: 0;
@@ -253,7 +257,9 @@ img { max-width: 100%; display: block; }
   font-size: 13px;
 }
 
-/** ================= Hero轮播 ================= */
+/* ============================================================
+   Hero 轮播
+   ============================================================ */
 .hero {
   position: relative;
   height: 100vh;
@@ -391,7 +397,9 @@ img { max-width: 100%; display: block; }
   100% { transform: translateY(0); opacity: 0; }
 }
 
-/** ================= 合作商logo滚动条 ================= */
+/* ============================================================
+   合作商 logo 滚动条
+   ============================================================ */
 .partners { padding: 80px 0; }
 .partners .container { text-align: center; }
 
@@ -428,7 +436,9 @@ img { max-width: 100%; display: block; }
 }
 .m-logo:hover { color: var(--txt-0); border-color: rgba(77,159,255,.4); }
 
-/** ================= 服务卡片（竖长方形 → 悬停展开横长方形） ================= */
+/* ============================================================
+   服务卡片（竖长方形 → 悬停展开横长方形）
+   ============================================================ */
 .services { background: linear-gradient(180deg, var(--bg-0), var(--bg-1)); }
 .services .container { text-align: center; }
 
@@ -512,7 +522,9 @@ img { max-width: 100%; display: block; }
 .h-card:hover .hc-sub { opacity: 1; transform: translateY(0); }
 .h-card:hover .hc-desc { max-height: 200px; opacity: 1; transform: translateY(0); }
 
-/** ================= 客户案例 ================= */
+/* ============================================================
+   客户案例
+   ============================================================ */
 .cases { background: var(--bg-1); }
 .cases .container { text-align: center; }
 
@@ -549,7 +561,15 @@ img { max-width: 100%; display: block; }
 .case-body h3 { font-size: 21px; margin-bottom: 12px; }
 .case-body p { color: var(--txt-1); font-size: 14.5px; }
 
-/** ================= 套餐价格 ================= */
+/* ============================================================
+   课程与书籍
+   ============================================================ */
+.courses { background: linear-gradient(180deg, var(--bg-0), var(--bg-1)); }
+.courses .container { text-align: center; }
+
+/* ============================================================
+   套餐价格
+   ============================================================ */
 .pricing { background: linear-gradient(180deg, var(--bg-1), var(--bg-0)); }
 .pricing .container { text-align: center; }
 
@@ -617,7 +637,9 @@ img { max-width: 100%; display: block; }
   opacity: .8;
 }
 
-/** ================= 关于我们 ================= */
+/* ============================================================
+   关于我们
+   ============================================================ */
 .about { background: var(--bg-1); }
 .about-wrap {
   display: grid;
@@ -662,7 +684,9 @@ img { max-width: 100%; display: block; }
   letter-spacing: 1px;
 }
 
-/** ================= 联系区 ================= */
+/* ============================================================
+   联系区
+   ============================================================ */
 .contact { background: linear-gradient(180deg, var(--bg-0), var(--bg-1)); }
 .contact-wrap {
   display: grid;
@@ -722,7 +746,9 @@ img { max-width: 100%; display: block; }
   text-align: center;
 }
 
-/** ================= 页脚 ================= */
+/* ============================================================
+   页脚
+   ============================================================ */
 .footer {
   border-top: 1px solid var(--line);
   background: var(--bg-0);
@@ -755,7 +781,9 @@ img { max-width: 100%; display: block; }
 .footer-right p { color: var(--txt-1); font-size: 14px; margin-bottom: 8px; }
 .footer-right .icp { color: var(--txt-2); font-size: 12.5px; }
 
-/** ================= 右下角浮动：客服+回顶部 ================= */
+/* ============================================================
+   右下角浮动：客服 + 回顶部
+   ============================================================ */
 .float-actions {
   position: fixed;
   right: 26px;
@@ -836,7 +864,9 @@ img { max-width: 100%; display: block; }
 .support-pop input:focus,
 .support-pop textarea:focus { border-color: rgba(77,159,255,.5); }
 
-/** ================= 响应式 ================= */
+/* ============================================================
+   响应式
+   ============================================================ */
 @media (max-width: 980px) {
   .nav-right .nav-link { padding: 0 8px; }
   .nav-search { max-width: 180px; }
