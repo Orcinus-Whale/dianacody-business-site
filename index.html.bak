@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="theme-dark">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
 <!-- ============ 顶部导航 ============ -->
 <nav class="navbar" id="navbar">
   <div class="nav-inner">
@@ -22,19 +23,21 @@
       </button>
       <a href="#hero" class="logo">ORCINUS<span class="logo-dot">·</span>AI</a>
     </div>
+
     <!-- 中：搜索框（下滑时加宽居中） -->
     <div class="nav-search" id="navSearch">
       <input type="text" id="searchInput" placeholder="搜索解决方案、案例、文档…">
       <button class="search-btn" aria-label="搜索">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7" /><path d="m21 21-4.3-4.3" /></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
       </button>
     </div>
+
     <!-- 右：Tag菜单（下滑时文字→图标） -->
     <div class="nav-right" id="navRight">
-      <a href="#cases" class="nav-link"><span class="nav-text">客户案例</span><span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3" /><path d="M3 9h18M9 21V9" /></svg></span></a>
-      <a href="#pricing" class="nav-link"><span class="nav-text">套餐价格</span><span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg></span></a>
-      <a href="#courses" class="nav-link"><span class="nav-text">课程/书</span><span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" /></svg></span></a>
-      <a href="#about" class="nav-link"><span class="nav-text">关于我们</span><span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg></span></a>
+      <a href="#cases" class="nav-link"><span class="nav-text">客户案例</span><span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg></span></a>
+      <a href="#pricing" class="nav-link"><span class="nav-text">套餐价格</span><span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span></a>
+      <a href="#courses" class="nav-link"><span class="nav-text">课程/书</span><span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span></a>
+      <a href="#about" class="nav-link"><span class="nav-text">关于我们</span><span class="nav-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span></a>
       <!--主题切换(夜间/日间)-->
       <a id="themeToggle" class="nav-link">
         <span class="nav-text">日间</span>
@@ -44,11 +47,12 @@
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
         </span>
-      </a>
-
+      </a>  
+          
     </div>
   </div>
 </nav>
+
 <!-- ============ 折叠大菜单（三横杠展开） ============ -->
 <div class="menu-overlay" id="menuOverlay">
   <div class="menu-panel">
@@ -77,21 +81,24 @@
     <div class="menu-foot">© 2026 Orcinus AI · 让企业真正用上AI</div>
   </div>
 </div>
+
 <!-- ============ 首屏 Hero 轮播 ============ -->
 <section class="hero" id="hero">
   <div class="swiper hero-swiper">
     <div class="swiper-wrapper">
+
       <div class="swiper-slide" style="background-image:url('assets/img/hero/hero-01.jpg')">
         <div class="slide-content">
           <p class="slide-tag" data-aos="fade-up">ENTERPRISE AI SOLUTIONS</p>
           <h1 class="slide-title" data-aos="fade-up" data-aos-delay="100">企业级 AI 解决方案</h1>
-          <p class="slide-desc" data-aos="fade-up" data-aos-delay="200">从战略咨询到落地交付，让大模型真正走进您的业务。</p>
+          <p class="slide-desc" data-aos="fade-up" data-aos-delay="200">从战略咨询到落地交付，让大模型真正走进你的业务。</p>
           <div class="slide-cta" data-aos="fade-up" data-aos-delay="300">
             <a href="#pricing" class="btn btn-primary">预约咨询</a>
             <a href="#cases" class="btn btn-ghost">查看案例</a>
           </div>
         </div>
       </div>
+
       <div class="swiper-slide" style="background-image:url('assets/img/hero/hero-02.jpg')">
         <div class="slide-content">
           <p class="slide-tag" data-aos="fade-up">AI DATA & INTELLIGENCE</p>
@@ -103,6 +110,7 @@
           </div>
         </div>
       </div>
+
       <div class="swiper-slide" style="background-image:url('assets/img/hero/hero-03.jpg')">
         <div class="slide-content">
           <p class="slide-tag" data-aos="fade-up">AI ARCHITECTURE</p>
@@ -114,6 +122,7 @@
           </div>
         </div>
       </div>
+
       <div class="swiper-slide" style="background-image:url('assets/img/hero/hero-04.jpg')">
         <div class="slide-content">
           <p class="slide-tag" data-aos="fade-up">ENTERPRISE AI SOLUTIONS</p>
@@ -125,6 +134,7 @@
           </div>
         </div>
       </div>
+
     </div>
     <div class="swiper-pagination"></div>
     <div class="swiper-button-prev"></div>
@@ -132,6 +142,7 @@
   </div>
   <div class="hero-scroll-hint"><span></span></div>
 </section>
+
 <!-- ============ 第二屏：合作商 Logo 滚动条 ============ -->
 <section class="partners section-dark" id="partners">
   <div class="container">
@@ -160,14 +171,15 @@
     </div>
   </div>
 </section>
+
 <!-- ============ 第三屏：服务/能力 卡片悬停展开 ============ -->
 <section class="services section-dark" id="services">
   <div class="container">
     <h2 class="section-title" data-aos="fade-up">核心能力</h2>
-    <p class="section-sub" data-aos="fade-up" data-aos-delay="100">专项定制服务，打造属于您的落地方案</p>
+    <p class="section-sub" data-aos="fade-up" data-aos-delay="100">悬停卡片，查看每一项服务的详情</p>
   </div>
   <div class="cards-row" data-aos="fade-up" data-aos-delay="150">
-    <div class="h-card h-card-01">
+    <div class="h-card">
       <div class="hc-inner">
         <div class="hc-num">01</div>
         <h3 class="hc-title">企业级 AI 咨询</h3>
@@ -175,15 +187,15 @@
         <p class="hc-desc">面向大企业与组织的付费咨询，从业务问题出发，梳理AI落地路径与投资回报。</p>
       </div>
     </div>
-    <div class="h-card h-card-02">
+    <div class="h-card">
       <div class="hc-inner">
         <div class="hc-num">02</div>
         <h3 class="hc-title">大模型落地实施</h3>
         <p class="hc-sub">RAG · Agent · 私有化部署</p>
-        <p class="hc-desc">把大模型能力嵌入您的真实业务流程，打通数据、应用与工程链路。</p>
+        <p class="hc-desc">把大模型能力嵌入你的真实业务流程，打通数据、应用与工程链路。</p>
       </div>
     </div>
-    <div class="h-card h-card-03">
+    <div class="h-card">
       <div class="hc-inner">
         <div class="hc-num">03</div>
         <h3 class="hc-title">中小商家 VIP 定制</h3>
@@ -191,7 +203,7 @@
         <p class="hc-desc">为中小商家提供轻量、可负担的AI工具与运营技能定制服务。</p>
       </div>
     </div>
-    <div class="h-card h-card-04">
+    <div class="h-card">
       <div class="hc-inner">
         <div class="hc-num">04</div>
         <h3 class="hc-title">课程与书籍</h3>
@@ -201,118 +213,111 @@
     </div>
   </div>
 </section>
+
 <!-- ============ 第四屏：客户案例 ============ -->
 <section class="cases section-dark" id="cases">
   <div class="container">
     <h2 class="section-title" data-aos="fade-up">客户案例</h2>
     <p class="section-sub" data-aos="fade-up" data-aos-delay="100">真实项目，可衡量的结果</p>
-    <div class="cases-grid" data-aos="fade-up" data-aos-delay="150">
-        <div class="case-card">
-          <div class="case-body">
-            <span class="case-industry">金融</span>
-            <h3>智能客服知识库</h3>
-            <p>为某头部券商构建基于RAG的智能问答系统，一次性解答率提升至78%。</p>
-          </div>
-        </div>
-        <div class="case-card">
-          <div class="case-body">
-            <span class="case-industry">制造</span>
-            <h3>设备预测性维护</h3>
-            <p>某汽车零部件工厂，利用时序模型降低非计划停机时间42%。</p>
-          </div>
-        </div>
-        <div class="case-card">
-          <div class="case-body">
-            <span class="case-industry">零售</span>
-            <h3>个性化推荐引擎</h3>
-            <p>连锁零售品牌部署AI选品与推荐，客单价提升18%。</p>
-          </div>
-        </div>
+  </div>
+  <div class="cases-grid">
+    <div class="case-card" data-aos="fade-up">
+      <div class="case-body">
+        <span class="case-industry">金融</span>
+        <h3>智能客服知识库</h3>
+        <p>为某头部券商构建基于RAG的智能问答系统，一次性解答率提升至78%。</p>
       </div>
+    </div>
+    <div class="case-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="case-body">
+        <span class="case-industry">制造</span>
+        <h3>设备预测性维护</h3>
+        <p>某汽车零部件工厂，利用时序模型降低非计划停机时间42%。</p>
+      </div>
+    </div>
+    <div class="case-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="case-body">
+        <span class="case-industry">零售</span>
+        <h3>个性化推荐引擎</h3>
+        <p>连锁零售品牌部署AI选品与推荐，客单价提升18%。</p>
+      </div>
+    </div>
   </div>
 </section>
+
 <!-- ============ 课程与书籍 ============ -->
 <section class="courses section-dark" id="courses">
   <div class="container">
     <h2 class="section-title" data-aos="fade-up">课程与书籍</h2>
     <p class="section-sub" data-aos="fade-up" data-aos-delay="100">把实战经验沉淀为可复制的 AI 能力</p>
-    <div class="cases-grid" data-aos="fade-up" data-aos-delay="150">
-
-        <div class="case-card">
-          <div class="case-body">
-            <span class="case-industry">体系课程</span>
-            <h3>AI 落地实战课</h3>
-            <p>面向技术负责人与团队，覆盖大模型应用、RAG 与 Agent 开发全流程。</p>
-          </div>
-        </div>
-
-        <div class="case-card">
-          <div class="case-body">
-            <span class="case-industry">实战手册</span>
-            <h3>企业 AI 落地手册</h3>
-            <p>从场景诊断到 ROI 测算，一本书讲透企业 AI 化的完整路径。</p>
-          </div>
-        </div>
-
-        <div class="case-card">
-          <div class="case-body">
-            <span class="case-industry">企业内训</span>
-            <h3>团队 AI 能力培训</h3>
-            <p>按企业业务定制内训工作坊，让团队快速掌握 AI 工具与工作流。</p>
-          </div>
-        </div>
-
+  </div>
+  <div class="cases-grid" data-aos="fade-up" data-aos-delay="150">
+    <div class="case-card">
+      <div class="case-body">
+        <span class="case-industry">体系课程</span>
+        <h3>AI 落地实战课</h3>
+        <p>面向技术负责人与团队，覆盖大模型应用、RAG 与 Agent 开发全流程。</p>
       </div>
+    </div>
+    <div class="case-card">
+      <div class="case-body">
+        <span class="case-industry">实战手册</span>
+        <h3>企业 AI 落地手册</h3>
+        <p>从场景诊断到 ROI 测算，一本书讲透企业 AI 化的完整路径。</p>
+      </div>
+    </div>
+    <div class="case-card">
+      <div class="case-body">
+        <span class="case-industry">企业内训</span>
+        <h3>团队 AI 能力培训</h3>
+        <p>按企业业务定制内训工作坊，让团队快速掌握 AI 工具与工作流。</p>
+      </div>
+    </div>
   </div>
 </section>
+
 <!-- ============ 第五屏：套餐价格 ============ -->
 <section class="pricing section-dark" id="pricing">
   <div class="container">
     <h2 class="section-title" data-aos="fade-up">服务套餐</h2>
     <p class="section-sub" data-aos="fade-up" data-aos-delay="100">透明定价，按需选择</p>
-    <div class="price-grid" data-aos="fade-up" data-aos-delay="150">
-
-        <!--<div class="price-card" data-aos="fade-up">-->
-        <div class="price-card">
-          <h3>轻量咨询</h3>
-          <div class="price">¥9,800<span> / 次</span></div>
-          <ul>
-            <li>1 天现场/远程诊断</li>
-            <li>AI 场景机会梳理</li>
-            <li>落地路线图报告</li>
-          </ul>
-          <a href="#contact" class="btn btn-ghost btn-price-ghost">联系我们</a>
-        </div>
-
-        <!--<div class="price-card featured" data-aos="fade-up" data-aos-delay="100">-->
-        <div class="price-card featured">
-          <span class="badge">推荐</span>
-          <h3>企业落地</h3>
-          <div class="price">¥98,000<span> / 项目</span></div>
-          <ul>
-            <li>大模型应用方案设计</li>
-            <li>RAG / Agent 开发实施</li>
-            <li>私有化部署与运维支持</li>
-            <li>3 个月陪跑保障</li>
-          </ul>
-          <a href="#contact" class="btn btn-primary">预约演示</a>
-        </div>
-
-        <!--<div class="price-card" data-aos="fade-up" data-aos-delay="200">-->
-        <div class="price-card">
-          <h3>VIP 定制</h3>
-          <div class="price">定制<span> / 按需</span></div>
-          <ul>
-            <li>中小商家专属方案</li>
-            <li>运营 AI 技能培训</li>
-            <li>长期顾问服务</li>
-          </ul>
-          <a href="#contact" class="btn btn-ghost btn-price-ghost">联系我们</a>
-        </div>
-
+  </div>
+  <div class="price-grid">
+    <div class="price-card" data-aos="fade-up">
+      <h3>轻量咨询</h3>
+      <div class="price">¥9,800<span> / 次</span></div>
+      <ul>
+        <li>1 天现场/远程诊断</li>
+        <li>AI 场景机会梳理</li>
+        <li>落地路线图报告</li>
+      </ul>
+      <a href="#contact" class="btn btn-ghost">联系我们</a>
+    </div>
+    <div class="price-card featured" data-aos="fade-up" data-aos-delay="100">
+      <span class="badge">推荐</span>
+      <h3>企业落地</h3>
+      <div class="price">¥98,000<span> / 项目</span></div>
+      <ul>
+        <li>大模型应用方案设计</li>
+        <li>RAG / Agent 开发实施</li>
+        <li>私有化部署与运维支持</li>
+        <li>3 个月陪跑保障</li>
+      </ul>
+      <a href="#contact" class="btn btn-primary">预约演示</a>
+    </div>
+    <div class="price-card" data-aos="fade-up" data-aos-delay="200">
+      <h3>VIP 定制</h3>
+      <div class="price">定制<span> / 按需</span></div>
+      <ul>
+        <li>中小商家专属方案</li>
+        <li>运营 AI 技能培训</li>
+        <li>长期顾问服务</li>
+      </ul>
+      <a href="#contact" class="btn btn-ghost">联系我们</a>
     </div>
   </div>
 </section>
+
 <!-- ============ 关于我们 ============ -->
 <section class="about section-dark" id="about">
   <div class="container about-wrap">
@@ -323,7 +328,7 @@
       <div class="about-stats">
         <div class="stat"><strong>10+</strong><span>年行业经验</span></div>
         <div class="stat"><strong>50+</strong><span>落地项目</span></div>
-        <div class="stat"><strong>99%</strong><span>客户满意度</span></div>
+        <div class="stat"><strong>98%</strong><span>客户满意度</span></div>
       </div>
     </div>
     <div class="about-visual" data-aos="fade-left">
@@ -332,12 +337,13 @@
     </div>
   </div>
 </section>
+
 <!-- ============ 联系/表单区 ============ -->
 <section class="contact section-dark" id="contact">
   <div class="container contact-wrap">
     <div class="contact-info" data-aos="fade-right">
       <h2 class="section-title">商务合作</h2>
-      <p>无论是企业级方案，还是中小商家定制，欢迎聊聊您的业务。</p>
+      <p>无论是企业级方案，还是中小商家定制，欢迎聊聊你的业务。</p>
       <div class="contact-lines">
         <p><strong>邮箱</strong> biz@dianacody.com</p>
         <p><strong>电话</strong> 400-000-0000</p>
@@ -353,6 +359,7 @@
     </form>
   </div>
 </section>
+
 <!-- ============ 页脚 ============ -->
 <footer class="footer">
   <div class="footer-inner">
@@ -366,7 +373,7 @@
         <a href="#about">关于</a>
         <a href="#contact">联系</a>
       </div>
-      <p class="copy">© 2016-<span id="currentYear"></span> Orcinus AI. All Rights Reserved.</p>
+      <p class="copy">© 2026 Orcinus AI. All Rights Reserved.</p>
     </div>
     <div class="footer-right">
       <p>联系电话：400-000-0000</p>
@@ -376,12 +383,13 @@
     </div>
   </div>
 </footer>
+
 <!-- ============ 右下角浮动：客服表单 + 回顶部 ============ -->
 <div class="float-actions">
   <!-- 客服耳机：悬停展开表单 -->
   <div class="float-item support-wrap">
     <button class="float-btn support-btn" id="supportBtn" aria-label="在线客服">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6" /><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" /></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
     </button>
     <div class="support-pop" id="supportPop">
       <div class="sp-head">在线咨询</div>
@@ -395,9 +403,10 @@
   </div>
   <!-- 回顶部 -->
   <button class="float-btn top-btn" id="topBtn" aria-label="回到顶部">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 15-6-6-6 6" /></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 15-6-6-6 6"/></svg>
   </button>
 </div>
+
 <!-- 脚本：本地库 + 站点逻辑 -->
 <script src="assets/js/swiper-bundle.min.js"></script>
 <script src="assets/js/aos.js"></script>
